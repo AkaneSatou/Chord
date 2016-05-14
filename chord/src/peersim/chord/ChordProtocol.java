@@ -94,8 +94,8 @@ public class ChordProtocol implements EDProtocol {
 				}
 				if (dest.getID() == successorList[0].getID() && 
 						(target.compareTo(((ChordProtocol) dest .getProtocol(p.pid)).chordId) < 0)) { 
-					if(target.compareTo(((ChordProtocol) Network.get(Network.size() - 1).getProtocol(p.pid)).chordId)<0){ 
-						fails++; 
+					if(target.compareTo(((ChordProtocol) Network.get(Network.size() - 1).getProtocol(p.pid)).chordId)>0){
+						fails++;
 					}
 				//if (dest.getID() == successorList[0].getID()
 				//		&& (target.compareTo(((ChordProtocol) dest
